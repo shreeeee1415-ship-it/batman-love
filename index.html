@@ -1,0 +1,246 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday & Valentine’s Day 🦇</title>  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #000000, #1a1a1a);
+      color: #f5f5f5;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 60px 20px;
+      background: radial-gradient(circle at top, #222 0%, #000 70%);
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      margin-bottom: 10px;
+      color: #fdd835; /* Batman yellow */
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: rgba(20, 20, 20, 0.9);
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .card h2 {
+      color: #fdd835;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+
+    .card p {
+      line-height: 1.7;
+      color: #e0e0e0;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img,
+    .gallery video {
+      width: 100%;
+      border-radius: 14px;
+      object-fit: cover;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+      border: 2px solid #fdd835;
+    }
+
+    footer {
+      padding: 25px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    .bat {
+      font-size: 2rem;
+    }
+  
+    .batman-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .batman-logo {
+      width: 120px;
+      height: 60px;
+      background: #9e9e9e;
+      border-radius: 0 0 60px 60px;
+      position: relative;
+      animation: fly 3s ease-in-out infinite;
+      filter: drop-shadow(0 0 12px rgba(200,200,200,0.5));
+    }
+
+    .batman-logo::before,
+    .batman-logo::after {
+      content: '';
+      position: absolute;
+      top: -20px;
+      width: 50px;
+      height: 40px;
+      background: #000;
+      border-radius: 50%;
+    }
+
+    .batman-logo::before {
+      left: 15px;
+    }
+
+    .batman-logo::after {
+      right: 15px;
+    }
+
+    @keyframes fly {
+      0% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-15px) scale(1.05); }
+      100% { transform: translateY(0) scale(1); }
+    }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
+    }
+
+  
+    .hero-pair {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      animation: floatTogether 3.5s ease-in-out infinite;
+    }
+
+    .heart {
+      font-size: 1.8rem;
+      color: #ff4d6d;
+      animation: pulse 1.5s infinite;
+    }
+
+    .batman-logo {
+      width: 110px;
+      height: 55px;
+      background: #9e9e9e;
+      border-radius: 0 0 60px 60px;
+      position: relative;
+      filter: drop-shadow(0 0 12px rgba(200,200,200,0.5));
+    }
+
+    .batman-logo::before,
+    .batman-logo::after {
+      content: '';
+      position: absolute;
+      top: -18px;
+      width: 45px;
+      height: 36px;
+      background: #000;
+      border-radius: 50%;
+    }
+
+    .batman-logo::before { left: 12px; }
+    .batman-logo::after { right: 12px; }
+
+    .catwoman-logo {
+      width: 70px;
+      height: 70px;
+      background: #111;
+      border-radius: 50% 50% 40% 40%;
+      position: relative;
+      filter: drop-shadow(0 0 12px rgba(255,77,109,0.4));
+    }
+
+    .catwoman-logo::before,
+    .catwoman-logo::after {
+      content: '';
+      position: absolute;
+      top: -15px;
+      width: 18px;
+      height: 30px;
+      background: #111;
+      border-radius: 50% 50% 0 0;
+    }
+
+    .catwoman-logo::before { left: 10px; }
+    .catwoman-logo::after { right: 10px; }
+
+    @keyframes floatTogether {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+      100% { transform: scale(1); }
+    }
+
+  </style></head>
+<body>
+  <!-- Slide 1 -->
+  <div id="slide1" class="slide">
+    <h1>To my Vedant 🦇</h1>
+    <p style="font-style:italic; color:#ff8fa3;">Every Batman needs his Catwoman 🐈‍⬛🖤✨</p>
+    <div style="margin:16px 0;">
+      <!-- First slide image -->
+      <img src="firstslide.jpg" alt="Love" style="width:260px; border-radius:14px; box-shadow:0 8px 24px rgba(0,0,0,0.6);">
+    </div>
+    <button onclick="showSlide2()">Click here 💌</button>
+  </div>  <!-- Slide 2 -->  <div id="slide2" class="slide" style="display:none;">
+    <h2>Happy Birthday & Happy Valentine’s Day 🎂💘</h2>
+    <p class="message">
+      Happy Birthday and Happy Valentine’s Day to the person who made me feel so special ✨, 
+      who has stayed with me through so many ups and downs 🤍. 
+      I love you selflessly and can never stop loving you ❤️. 
+      You are the most precious gift that 2024 gave me 🎁, and I want you forever ♾️.
+      <br><br>
+      Tu mazya sathi khup important aahes 🥺❤️. 
+      Mi mazi life tuzya bina imagine pan nahi karu shakat yaar 🫶. 
+      Kitti doubt ghet asli tari, I trust you, babe 🥹✨.
+      <br><br>
+      Vedant, I love you and I never want to lose you 🦇❤️🐈‍⬛.
+    </p>
+    <button onclick="showSlide3()">Continue ➡️</button>
+  </div>  <!-- Slide 3 -->  <div id="slide3" class="slide" style="display:none;">
+    <h2>Us 🤍</h2>
+    <!-- Replace ourphoto.jpg with your image name -->
+    <img src="ourphoto.jpg" alt="Our Photo" style="width:250px; border-radius:12px;">
+    <p style="margin-top:20px; font-size:18px; color:#ff8fa3;">— Dhanshree ❤</p>
+  </div>  <script>
+    function showSlide2() {
+      document.getElementById('slide1').style.display = 'none';
+      document.getElementById('slide2').style.display = 'block';
+    }
+    function showSlide3() {
+      document.getElementById('slide2').style.display = 'none';
+      document.getElementById('slide3').style.display = 'block';
+    }
+  </script></body>
+</html>
